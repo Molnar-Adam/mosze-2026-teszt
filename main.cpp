@@ -1,7 +1,7 @@
 #include <iostream>
 
 constexpr int N_ELEMENTS = 100;
-
+using namespace std;
 int main()
 {
     //NELEMENTS helyett N_ELEMENTS
@@ -32,6 +32,7 @@ int main()
     }
     atlag /= N_ELEMENTS;
     std::cout << "Atlag: " << atlag << std::endl;
+    cout << "Memoria felszabaditva:" << sizeof(b) << " bajt" << endl;
     //Hiányzik a memória felszabadítás;
     delete[] b;
     
